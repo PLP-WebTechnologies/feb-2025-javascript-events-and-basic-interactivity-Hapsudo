@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive JavaScript Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>✨ Welcome to Radion Interactive Playground ✨</h1>
+  </header>
+
+  <!-- Event Handling Section -->
+  <section id="events">
+    <h2>🎈 Event Playground</h2>
+    <button id="magicBtn">Click me!</button>
+    <p id="hoverMe">Hover over me 👀</p>
+    <p id="keypressOutput">Type something...</p>
+  </section>
+
+  <!-- Interactive Gallery -->
+  <section id="gallery">
+    <h2>🖼️ Image Gallery</h2>
+    <div class="slider">
+      <img id="galleryImg" src="images.jpg" alt="Gallery image" />
+      <br />
+      <button onclick="prevImg()">⬅️</button>
+      <button onclick="nextImg()">➡️</button>
+    </div>
+  </section>
+
+  <!-- Accordion Content -->
+  <section id="accordion">
+    <h2>📚 Learn More</h2>
+    <div class="accordion-item">
+      <button class="accordion-toggle">What is JavaScript?</button>
+      <div class="accordion-content">JavaScript makes your content beautiful.</div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-toggle">Why CSS?</button>
+      <div class="accordion-content">CSS makes web pages interactive.</div>
+    </div>
+  </section>
+
+  <!-- Form Validation -->
+  <section id="form">
+    <h2>📋 Signup Form</h2>
+    <form id="signupForm">
+      <label>Email: <input type="email" id="email" required /></label><br />
+      <small id="emailFeedback"></small><br />
+
+      <label>Password: <input type="password" id="password" required minlength="8" /></label><br />
+      <small id="passwordFeedback"></small><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
